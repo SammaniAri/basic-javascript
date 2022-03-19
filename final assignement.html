@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carnation Flowers</title>
+    <style>
+h1{ text-align: center;
+color:rgb(87, 4, 4);
+}
+h2 { text-align: center;
+border: 1px solid black;
+padding: 15px;
+font-size: 20px;
+border-radius: 4px;
+}
+
+img {
+     display: block;
+     margin : 0  auto;
+
+     padding: 20px;
+     max-width: 80%;
+     border-radius: 35px;
+     box-shadow: 10px 5px 5px black;
+ }
+ p {
+      line-height: 1.5;
+      font-size: 18px;
+      color: rgb(87, 4, 4);
+      margin-left: 90px;
+      margin-right: 90px;
+      font-weight: 600;
+       
+      
+ }
+ .learnMore {
+      display: block;
+      margin-top: 10px;
+      text-align: center;
+ }
+ .learnMore:hover
+ {
+      text-decoration: wavy;
+      color:rgb(87, 4, 4)
+ }
+
+ button{
+      display: block;
+      margin: 0 auto;
+      background-color: rgb(241, 75, 75);
+      font-size: larger;
+      border-radius: 35px;
+      padding: 15px 20px;
+      transition: 200ms ease-in-out;
+ }
+ button:hover{
+      cursor: pointer;
+      opacity: 0.9;
+ }
+ .footer{
+      text-align: center;
+ }
+ .container{
+      background: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+ }
+    </style>
+  </head>
+  <body class="container">
+    <h1>Red carnation flowers</h1>
+    <h2>A symbol of love!</h2>
+    <img
+      src="
+    https://www.petalrepublic.com/wp-content/uploads/2019/11/carnation-1488929_1920-1536x1007.jpg"
+      alt="red carnation flower bouquet"
+      width="500"
+    />
+    <p> 
+       
+      Like the red rose, red Carnations are  <span style="color: black;">THE IDEAL FLOWER</span> when you are
+      planning to express <em> 
+deep love and affection
+      </em> with a romantic gesture. These
+      flowers display ruffled petals that add just the right texture to any
+      arrangement. 
+The vivid red gives a pop of color that quickly turns heads.
+      <hr/>
+    </br>
+    </br>
+   
+   <a href="https://en.wikipedia.org/wiki/Dianthus_caryophyllus" target="_blank" class="learnMore">
+ Learn more on Wikipedia!
+   </a>
+    </p>
+    <button class="buyButton">
+         Buy carnation flowers!
+    </button>
+</br>
+<div class="footer">
+<strong>This page was built by</strong>  <a href="https://www.linkedin.com/in/sammani-ariyarathne/" target="_blank">  Sammani Ariyarathne </a>
+</div>
+   <script>
+        function buyCarnationFlowers () {
+             
+             let name=prompt ("What's your name?");
+             let address=prompt("What is your home adress?");
+             let email=prompt ("what is your email address?")
+            alert("Thank you "  + name + " We will send a list of shops where you can buy flowers (for a discount of course!🤩 ) near you, through   " + email );
+              
+        }
+function doYouLike(){
+let like=prompt("Do you like carnations?");
+             if(like==="yes")
+             {alert ("Great! Me too!");}
+             else{alert("Just try them once, you'd grow to like them!");}
+}
+let picture=document.querySelector("img");
+picture.addEventListener("click" ,doYouLike);
+
+let buyButton=document.querySelector("button");
+buyButton.addEventListener("click" ,buyCarnationFlowers);
+   </script>
+  
+  </body>
+</html>
